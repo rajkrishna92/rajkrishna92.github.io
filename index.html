@@ -1,8 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <b:if cond='data:blog.url == &quot;https://rajkrishna92.blogspot.com/&quot;'>
-      <link href='https://rajkrishna92.blogspot.com/' rel='canonical'/>
-      <meta content='0; url=https://rajkrishna92.blogspot.com/' http-equiv='refresh'/>
-    </b:if>
-
-    <!-- ... -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dr. Rajkrishna Mondal | AI Innovator</title>
+  <style>
+    /* Reset and Base Styles */
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      background: #f5f5f5;
+      color: #333;
+    }
+    a {
+      color: #3498db;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    /* Navigation */
+    .nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0,0,0,0.85);
+      padding: 10px 20px;
+      z-index: 1000;
+    }
+    .nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+    }
+    .nav ul li {
+      margin-left: 20px;
+    }
+    .nav ul li a {
+      color: #fff;
+      font-weight: bold;
+    }
+    /* Header Section */
+    .header {
+      background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      padding: 0 20px;
+    }
+    .header h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    }
+    .header p {
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    }
+    .header a.button {
+      background: #3498db;
+      color: #fff;
+      padding: 10px 25px;
+      border-radius: 4px;
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
+    .header a.button:hover {
+      background: #2980b9;
+    }
+    /* Sections */
+    section {
+      padding: 80px 20px;
+      background: #fff;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      position: relative;
+    }
+    .section-title::after {
+      content: "";
+      width: 80px;
+      height: 3px;
+      background: #3498db;
+      display: block;
+      margin: 10px auto;
+    }
+    .content {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .experience, .projects, .publications {
+      margin-bottom: 40px;
+    }
+    .experience h3, .projects h3, .publications h3 {
+      font-size: 1.75rem;
+      margin-bottom: 10px;
+      color: #3498db;
+    }
+    .experience p, .projects p, .publications p {
+      margin-bottom: 20px;
+    }
+    /* Footer */
+    .footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+    /* Responsive */
+    @media (max-width: 768px) {
+      .header h1 { font-size: 2.5rem; }
+      .header p { font-size: 1.25rem; }
+      .nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+      .nav ul li { margin: 10px 0; }
+    }
+  </style>
 </head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header Section -->
+  <header id="home" class="header">
+    <h1>Dr. Rajkrishna Mondal</h1>
+    <p>AI Innovator | Data Scientist | Researcher</p>
+    <a class="button" href="#contact">Get in Touch</a>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="content">
+      <h2 class="section-title">About Me</h2>
+      <p>
+        With a Ph.D. in Mathematics and extensive experience in AI, NLP, and Data Science, I bridge the gap between advanced research and practical, industry-ready solutions. Passionate about creating intelligent systems, I have developed cutting-edge projects ranging from natural language-powered reporting engines to cognitive search systems.
+      </p>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <div class="content">
+      <h2 class="section-title">Experience</h2>
+      <div class="experience">
+        <h3>Data Scientist, Infinity Analytics Pvt. Ltd. (Mumbai)</h3>
+        <p>
+          Spearheaded the development of innovative projects leveraging NLP and deep learning to build dynamic reporting engines, entity extraction systems, and schema identification models using advanced tools such as OpenAI, LangChain, and more.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="content">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects">
+        <ul>
+          <li><strong>Human Language-Powered Reporting Engine:</strong> Enabling intuitive report generation using natural language.</li>
+          <li><strong>Entity Extraction System:</strong> Accurate extraction of entities from text with API integrations.</li>
+          <li><strong>LLM-powered Cognitive Search Engine:</strong> Facilitating conversational query responses and dynamic report generation.</li>
+          <li><strong>MATLAB-based Medical Diagnostic Applications:</strong> Tools for diabetic patient assessment and kidney performance analysis.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications Section -->
+  <section id="publications">
+    <div class="content">
+      <h2 class="section-title">Publications</h2>
+      <div class="publications">
+        <p>
+          Authored several papers published in reputed journals and conferences (IEEE, Springer, IJFSA) covering topics like fuzzy systems, AI-based diagnostic models, and intelligent information systems.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="content">
+      <h2 class="section-title">Contact</h2>
+      <p>Email: <a href="mailto:rajkrishna.math@gmail.com">rajkrishna.math@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/rajkrishna92" target="_blank">View Profile</a></p>
+      <p>GitHub: <a href="https://github.com/rajkrishna92" target="_blank">View Projects</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Dr. Rajkrishna Mondal. All rights reserved.</p>
+  </footer>
+</body>
+</html>
