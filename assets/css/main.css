@@ -649,6 +649,44 @@ section,
 }
 
 /*--------------------------------------------------------------
+# Area of interest
+--------------------------------------------------------------*/
+.areas-of-interest {
+  padding: 40px 0;
+}
+
+.areas-of-interest h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.interest-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* space between tags */
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  background-color: #f42f5e; /* Adjust color as needed */
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.tag:hover {
+  background-color: #d02751; /* Hover color */
+  cursor: pointer;
+}
+
+
+/*--------------------------------------------------------------
 # Stats Section
 --------------------------------------------------------------*/
 .stats .stats-item {
