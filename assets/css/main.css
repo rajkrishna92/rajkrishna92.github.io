@@ -685,6 +685,27 @@ section,
   cursor: pointer;
 }
 
+/*--------------------------------------------------------------
+# Skill section
+--------------------------------------------------------------*/
+.progress {
+  margin-bottom: 15px;
+}
+.progress .skill {
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+.progress-bar-wrap {
+  background: #f3f3f3;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.progress-bar {
+  height: 10px;
+  background: #007bff;
+}
+
 
 /*--------------------------------------------------------------
 # Stats Section
