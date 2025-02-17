@@ -229,12 +229,17 @@
 })();
 
 function showSection(sectionId) {
-            document.querySelectorAll('.content').forEach(section => {
-                section.classList.remove('active');
-            });
-            document.querySelectorAll('.tab').forEach(tab => {
-                tab.classList.remove('active');
-            });
-            document.getElementById(sectionId).classList.add('active');
-            document.querySelector(`[onclick="showSection('${sectionId}')"]`).classList.add('active');
-        };
+  // Hide all content sections
+  document.querySelectorAll('.content').forEach(content => {
+      content.classList.remove('active');
+  });
+
+  // Remove active class from all tabs
+  document.querySelectorAll('.tab').forEach(tab => {
+      tab.classList.remove('active');
+  });
+
+  // Show selected section and activate tab
+  document.getElementById(sectionId).classList.add('active');
+  event.currentTarget.classList.add('active');
+};
