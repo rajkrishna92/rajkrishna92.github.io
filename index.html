@@ -86,6 +86,15 @@
           </ul>
         </li>
         <li><a href="#achievements"><i class="bi bi-trophy navicon"></i> Achievements</a></li> 
+        <!-- Research Dropdown -->
+        <li class="dropdown"><a href="#publication"><i class="bi bi-journal-bookmark navicon"></i> <span> Research </span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <!-- <li><a href="#publications">Publications</a></li> -->
+            <li><div class="tab" onclick="showSection('publications')"><a href="#publications">Publications</a></div></li>
+            <li><div class="tab" onclick="showSection('conferences')"><a href="#conference">Conferences</a></div></li>
+            <li><div class="tab" onclick="showSection('workshops')"><a href="#workshops">Workshops</a></div></li>
+          </ul>
+        </li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
         <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
         <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
@@ -161,8 +170,7 @@
       </div>
       <p> </p>
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4 justify-content-center">
+      <div class="row gy-4 justify-content-center">
           <div class="col-lg-4">
             <img src="assets/img/raj_pic2.jpg" class="img-fluid" alt="">
           </div>
@@ -548,82 +556,311 @@
       </div>
     </section><!-- /Achievements Section -->
 
-    <!-- Publication Section -->
-    <section id="publication" class="resume section">
-      
-      <!-- publication Title -->
+    <!-- Research Section -->
+    <section id="publication" class="research section">
+      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Research & Achievements</h2>
-        <p>Dr. Rajkrishna Mondal has made significant contributions in AI, Soft Computing, and Mathematical Modeling, with publications, certifications, and active participation in international conferences and workshops.</p>
+          <h2>Research</h2>
+          <p>
+            Our research harnesses advanced fuzzy logic and computational intelligence to solve complex decision-making challenges in healthcare, engineering, and data analytics. We develop innovative models—such as fuzzy utility matrices, interval-valued hesitant fuzzy sets, and hybrid intelligent systems—to improve diagnostics, optimize diet recommendations for metabolic disorders, and enhance multi-criteria decision-making.
+          </p>
+          <p>
+            Our findings are widely disseminated through leading international journals, and we actively share our work at global conferences and specialized workshops. These events provide a platform for collaboration, knowledge exchange, and real-world application of our research.
+          </p>
       </div><!-- End Section Title -->
 
       <div class="container">
-
-        <div class="row">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Sumary</h3>
-
-            <div class="resume-item pb-0">
-              <h4>Brandon Johnson</h4>
-              <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
-              <ul>
-                <li>Portland par 127,Orlando, FL</li>
-                <li>(123) 456-7891</li>
-                <li>alice.barkley@example.com</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Master of Fine Arts &amp; Graphic Design</h4>
-              <h5>2015 - 2016</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-              <h5>2010 - 2014</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
-            </div><!-- Edn Resume Item -->
-
+          <div class="tabs">
+              <div class="tab active" onclick="showSection('publications')">PUBLICATIONS</div>
+              <div class="tab" onclick="showSection('conferences')" >CONFERENCES</div>
+              <div class="tab" onclick="showSection('workshops')">WORKSHOPS</div>
           </div>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Senior graphic design specialist</h4>
-              <h5>2019 - Present</h5>
-              <p><em>Experion, New York, NY </em></p>
-              <ul>
-                <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
-                <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
-                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
-                <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Graphic design specialist</h4>
-              <h5>2017 - 2018</h5>
-              <p><em>Stepping Stone Advertising, New York, NY</em></p>
-              <ul>
-                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
+          <div id="publications" class="content active">
+            <!-- 2022 Publication -->
+            <div class="publication-item">
+              <span class="year-badge">2022</span>
+              <h3>
+                <a href="http://doi.org/10.4018/IJFSA.303563" target="_blank">
+                  Fuzzy Utility Matrix-Based Intelligent Decision-Making Model and Its Application to Diet Recommendation System for Metabolic Disorder Patients
+                </a>
+              </h3>
+              <p><strong>Rajkrishna Mondal</strong> and Pankaj Srivastava</p>
+              <p><i>International Journal of Fuzzy System Applications (IJFSA)</i></p>
+              <p>Vol. 11(1) (pp. 1-22), IGI Global</p>
+            </div>
+          
+            <!-- 2021 Publication: Intelligent Information System -->
+            <div class="publication-item">
+              <span class="year-badge">2021</span>
+              <h3>
+                <a href="http://doi.org/10.1007/978-981-16-3807-7_15" target="_blank">
+                  Design and Development of Intelligent Information System using Hesitant Fuzzy Weighting Linguistic Term Sets for Computing with Words
+                </a>
+              </h3>
+              <p><strong>Pankaj Srivastava</strong> and Rajkrishna Mondal</p>
+              <p>
+                <i>
+                  Mathematical, Computational Intelligence and Engineering Approaches for Tourism, Agriculture and Healthcare (LNNS, Volume 214)
+                </i>
+              </p>
+              <p>Lecture Notes in Networks and Systems, pp. 195–207, Springer</p>
+            </div>
+          
+            <!-- 2021 Publication: QUALIFLEX Ranking System -->
+            <div class="publication-item">
+              <span class="year-badge">2021</span>
+              <h3>
+                <a href="http://doi.org/10.1109/ICCCIS51004.2021.9397179" target="_blank">
+                  QUALIFLEX based ranking system by using Interval Valued Hesitant Fuzzy Set and its application to rank the Diabetic patients
+                </a>
+              </h3>
+              <p><strong>Pankaj Srivastava</strong> and Rajkrishna Mondal</p>
+              <p>
+                <i>2021 International Conference on Computing, Communication, and Intelligent Systems (ICCCIS 2021)</i>
+              </p>
+              <p>(pp. 78-85), IEEE</p>
+            </div>
+          
+            <!-- 2021 Publication: Kidney Performance Assessment -->
+            <div class="publication-item">
+              <span class="year-badge">2021</span>
+              <h3>
+                <a href="http://doi.org/10.14456/ITJEMAST.2021.64" target="_blank">
+                  Design and Development of an Intelligent System to Assess Kidney Performances of Persons Suffering from Diabetes
+                </a>
+              </h3>
+              <p><strong>Pankaj Srivastava</strong> and Rajkrishna Mondal</p>
+              <p>
+                <i>International Transaction Journal of Engineering, Management, and Applied Sciences and Technologies</i>
+              </p>
+              <p>Vol. 12(4), (pp. 12A4A:1-14), TuEngr Group</p>
+            </div>
+          
+            <!-- 2021 Publication: Hesitant Fuzzy Envelope Expert System -->
+            <div class="publication-item">
+              <span class="year-badge">2021</span>
+              <h3>
+                <a href="https://doi.org/10.3126/njmathsci.v2i1.36503" target="_blank">
+                  A Hesitant Fuzzy Envelope Based Expert System in Human Decision Making
+                </a>
+              </h3>
+              <p><strong>Pankaj Srivastava</strong> and Rajkrishna Mondal</p>
+              <p><i>Nepal Journal of Mathematical Sciences</i></p>
+              <p>Vol. 2(1) (pp. 1-6), ISSN: 2738-9928</p>
+            </div>
+          
+            <!-- 2020 Publication: Diabetes Diagnostic System -->
+            <div class="publication-item">
+              <span class="year-badge">2020</span>
+              <h3>
+                <a href="http://www.testmagzine.biz/index.php/testmagzine/article/view/3136" target="_blank">
+                  Diabetes Diagnostic Intelligent Information System
+                </a>
+              </h3>
+              <p><strong>Pankaj Srivastava</strong> and Rajkrishna Mondal</p>
+              <p><i>TEST Engineering and Management</i></p>
+              <p>Vol. 82: Jan/Feb 2020 (pp. 14455-4467), The Mattingley Publishing Co., Inc</p>
+            </div>
+          
+            <!-- 2020 Publication: Medical Diagnostic Information System -->
+            <div class="publication-item">
+              <span class="year-badge">2020</span>
+              <h3>
+                <a href="https://link.springer.com/chapter/10.1007/978-981-32-9775-3_86" target="_blank">
+                  A Medical Diagnostic Information System with Computing with Words Using Hesitant Fuzzy Sets
+                </a>
+              </h3>
+              <p>
+                <strong>Rajkrishna Mondal</strong>, Akshay Verma and Pushpendra Kumar Gupta
+              </p>
+              <p>
+                <i>Advances in VLSI, Communication, and Signal Processing</i>
+              </p>
+              <p>(pp. 971–980), Springer</p>
+            </div>
+          
+            <!-- 2018 Publication: WSN Clustering -->
+            <div class="publication-item">
+              <span class="year-badge">2018</span>
+              <h3>
+                <a href="https://ieeexplore.ieee.org/document/8703353" target="_blank">
+                  Neural based energy-efficient stable clustering for multilevel heterogeneous WSNs
+                </a>
+              </h3>
+              <p>
+                Akshay Verma, <strong>Rajkrishna Mondal</strong>, Prateek Gupta and Arvind Kumar
+              </p>
+              <p>
+                <i>2018 First International Conference on Secure Cyber Computing and Communication (ICSCCC)</i>
+              </p>
+              <p>(pp. 208-212), IEEE</p>
+            </div>
+          </div>
+          
+          <div id="conferences" class="content active">
+            <div class="publication-list">      
+              <!-- 25-27 Jun, 2021 Conference -->
+              <div class="publication-item">
+                <span class="year-badge">25-27 Jun, 2021</span>
+                <h3>
+                  24th FAI International Conference on Global Trends of Data Analytics in Business Management, Social Sciences, Medical Sciences and Decision making (24th FAI-ICDBSMD 2021)
+                </h3>
+                <p>Presented paper Title: <strong>Fuzzy Utility Matrix based Intelligent Decision-Making Mathematical model and its application in Diet recommendation system for Metabolic Disorders patient</strong></p>
+                <p>Organized by <strong>FATER Academy of India; Institute of Technology, Gopeshwar and UNIFACVEST – University Center, Brazil</strong><br> </br> </p>
+              </div>
+            
+              <!-- 19-20 Feb, 2021 Conference -->
+              <div class="publication-item">
+                <span class="year-badge">19-20 Feb, 2021</span>
+                <h3>
+                  International Conference on Computing, Communication, and Intelligent Systems (ICCCIS-2021)
+                </h3>
+                <p>Presented paper Title: <strong>QUALIFLEX based ranking system by using Interval Valued Hesitant Fuzzy Set and its application to rank the Diabetic patients</strong></p>
+                <p>Organized by <strong>Sharda University, Greater Noida, India</strong></p>
+                <p>IEEE Conference Record <strong>51004</strong>; ISBN No.: <strong>978-1-7281-8529-3</strong><br> </br> </p>
+              </div>
+            
+              <!-- 14 Mar, 2020 Conference -->
+              <div class="publication-item">
+                <span class="year-badge">14 Mar, 2020</span>
+                <h3>
+                  International Conference on Recent Trends and Innovations in Multidisciplinary Research (ICRTIMR-2020)
+                </h3>
+                <p>Presented paper Title: <strong>Diabetes Diagnostic Intelligent Information System</strong></p>
+                <p>Organized by <strong>IEC University, Baddi, H.P., India</strong></p>
+                <p>Jointly organized by <strong>Globally Multidisciplinary Research and Education Association (GMREA)</strong><br> </br> </p>
+              </div>
+            
+              <!-- 21-23 Dec, 2019 Conference -->
+              <div class="publication-item">
+                <span class="year-badge">21-23 Dec, 2019</span>
+                <h3>
+                  International Conference on Engineering, Mathematical and Computational Intelligence (ICEMCI-2019)
+                </h3>
+                <p>Presented paper Title: <strong>Design and Development of Intelligent Information System using Hesitant Fuzzy Weighting Linguistic Term Sets for Computing with Words</strong></p>
+                <p>Organized by <strong>Jabalpur Engineering College, Jabalpur, Madhya Pradesh, India in association with FATER Academy of India and Walchand Engineering College, Sangli, Maharashtra, India</strong> <br> </br> </p>
+              </div>
+            
+              <!-- 16-17 Nov, 2019 Conference -->
+              <div class="publication-item">
+                <span class="year-badge">16-17 Nov, 2019</span>
+                <h3>
+                  Conference on Modern Analysis and Applications – An International Meet (CMAA-2019) (67th Annual Conference of Bharat Ganita Parishad)
+                </h3>
+                <p>Presented paper Title: <strong>Intelligent Diet Recommendation System for Metabolic Disorders Patient</strong></p>
+                <p>Organized by <strong>The Department of Mathematics and Computer Science, Babu Banarasi Das University, Lucknow (Uttar Pradesh), India</strong> in collaboration with <strong>Bharat Ganita Parishad, Lucknow, India</strong> <br> </br> </p>
+              </div>
+            
+              <!-- 15-16 Apr, 2019 Conference -->
+              <div class="publication-item">
+                <span class="year-badge">15-16 Apr, 2019</span>
+                <h3>
+                  National Conference on Recent Trends in Devices, Circuits and Communication (RTDC2-2019)
+                </h3>
+                <p>Presented paper Title: <strong>A Hesitant Fuzzy based expert system in Human Decision making</strong></p>
+                <p>Organized by <strong>Department of Electronics and Communication Engineering, Madan Mohan Malaviya University of Technology, Gorakhpur, UP, India</strong><br> </br> </p>
+              </div>
+            
+              <!-- 29 Nov-1 Dec, 2018 Conference -->
+              <div class="publication-item">
+                <span class="year-badge">29 Nov-1 Dec, 2018</span>
+                <h3>
+                  International Conference on VLSI, Communication and Signal Processing (VCAS 2018)
+                </h3>
+                <p>Presented paper Title: <strong>A Medical diagnostic information system with Computing with Words using Hesitant Fuzzy Sets</strong></p>
+                <p>Organized by <strong>ECE Department, MNNIT Allahabad, Prayagraj, India</strong> <br> </br> </p>
+              </div>
+            
+              <!-- 24-25 Mar, 2018 Conference -->
+              <div class="publication-item">
+                <span class="year-badge">24-25 Mar, 2018</span>
+                <h3>
+                  International Conference on Recent Trends in Mathematical Sciences (ICRTMS-2018)
+                </h3>
+                <p>Presented paper Title: <strong>Application of Hesitant Fuzzy Set for multi-criteria decision making Soft Computing Model in Diabetes Diagnostics</strong></p>
+                <p>Organized by <strong>Department of Applied Mathematics, Maharaja Bir Bikram Univesity, Tripura, India</strong> in collaboration with <strong>Tripura Mathematical Society, Tripura, India</strong> <br> </br></p>
+              </div>
+            </div>            
           </div>
 
-        </div>
+          <div id="workshops" class="content active">
+            <div class="publication-list">
 
+              <!-- 27-28 May, 2021 -->
+              <div class="publication-item">
+                <span class="year-badge">27-28 May, 2021</span>
+                <h3>II International Scientific Internet Conference on ACTUAL PROBLEMS OF PHYSICAL CULTURE, SPORTS AND HEALTH</h3>
+                <p>Jointly organized by <strong>The Bohdan Khmelnytsky National University of Cherkasy</strong><br> </br></p>
+              </div>
+            
+              <!-- 07-08 Sept, 2019 -->
+              <div class="publication-item">
+                <span class="year-badge">07-08 Sept, 2019</span>
+                <h3>Machine Learning Workshop</h3>
+                <p>Organized by <strong>Kyrion Technologies Pvt. Ltd.</strong> at <strong>IIIT Allahabad</strong><br> </br></p>
+              </div>
+            
+              <!-- 01-05 Apr, 2019 -->
+              <div class="publication-item">
+                <span class="year-badge">01-05 Apr, 2019</span>
+                <h3>Application of MATLAB in Science and Technology (AMST -2019)</h3>
+                <p>Jointly organized by <strong>Department of Physics, MNNIT Allahabad, Prayagraj, India</strong> and <strong>Electrical Engineering Department, KNIT Sultanpur, Uttar Pradesh, India</strong><br> </br></p>
+              </div>
+            
+              <!-- 6-10 Jun, 2018 -->
+              <div class="publication-item">
+                <span class="year-badge">6-10 Jun, 2018</span>
+                <h3>National Instructional Workshop on Cryptology</h3>
+                <p>Organized by <strong>Department of Mathematics, MNNIT Allahabad</strong> in collaboration with <strong>Cryptology Research Society of India</strong><br> </br></p>
+              </div>
+            
+              <!-- 11-15 Dec, 2017 -->
+              <div class="publication-item">
+                <span class="year-badge">11-15 Dec, 2017</span>
+                <h3>Fuzzy Techniques for Intelligent Decision Making</h3>
+                <p>Organized by <strong>IIT Patna</strong> in collaboration with <strong>Global Initiative of Academic Networks (GIAN)</strong><br> </br></p>
+              </div>
+            
+              <!-- 7-11 Aug, 2017 -->
+              <div class="publication-item">
+                <span class="year-badge">7-11 Aug, 2017</span>
+                <h3>Big Data</h3>
+                <p>Organized by <strong>IIT Kanpur</strong> in collaboration with <strong>Knowledge Incubation for TEQIP</strong><br> </br></p>
+              </div>
+            
+              <!-- 29 May -2 Jun, 2017 -->
+              <div class="publication-item">
+                <span class="year-badge">29 May -2 Jun, 2017</span>
+                <h3>Data Analytics and Machine Learning with R (DAMLR-17)</h3>
+                <p>Organized by <strong>the Department of Computer Science and Engineering, MNNIT Allahabad, Prayagraj, India</strong><br> </br></p>
+              </div>
+            
+              <!-- 1-7 Dec, 2016 -->
+              <div class="publication-item">
+                <span class="year-badge">1-7 Dec, 2016</span>
+                <h3>Application of MATLAB in Science, Technology and Management (AMSTM-2016)</h3>
+                <p>Organized by <strong>School of Management studies and Dapartment of Mathematics, MNNIT Allahabad, Prayagraj, India</strong><br> </br></p>
+              </div>
+            
+              <!-- 19-23 Oct, 2016 -->
+              <div class="publication-item">
+                <span class="year-badge">19-23 Oct, 2016</span>
+                <h3>Role of Mathematical Sciences in Engineering and Technology (RMSET-16)</h3>
+                <p>Organized by <strong>Department of Mathematics, MNNIT Allahabad, Prayagraj, India</strong><br> </br></p>
+              </div>
+            
+              <!-- 8-26 Jun, 2015 -->
+              <div class="publication-item">
+                <span class="year-badge">8-26 Jun, 2015</span>
+                <h3>Summer Program in Mathematics (SPIM 2015)</h3>
+                <p>Organized by <strong>Harish-Chandra Research Institute, Prayagraj, India</strong><br> </br></p>
+              </div>
+            
+            </div>            
+          </div>
       </div>
-
-    </section><!-- /Resume Section -->
+    </section><!-- /Research Section -->
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section light-background">

@@ -227,3 +227,25 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+function showSection(sectionId) {
+            document.querySelectorAll('.content').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+            document.querySelector(`[onclick="showSection('${sectionId}')"]`).classList.add('active');
+        };
+
+function showResearchSection(sectionId) {
+  document.querySelectorAll('.research-content').forEach(section => {
+      section.classList.remove('active');
+  });
+  document.querySelectorAll('.research-tab').forEach(tab => {
+      tab.classList.remove('active');
+  });
+  document.getElementById(sectionId).classList.add('active');
+  document.querySelector(`[onclick="showResearchSection('${sectionId}')"]`).classList.add('active');
+};
