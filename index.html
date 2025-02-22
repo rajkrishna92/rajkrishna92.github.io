@@ -86,12 +86,13 @@
           </ul>
         </li>
         <li><a href="#achievements"><i class="bi bi-trophy navicon"></i> Achievements</a></li> 
-        <li> <a href="#publication"><i class="bi bi-journal-bookmark navicon"></i> Publications </a></li>
-          <!-- <ul>
+        <li class="dropdown"> <a href="#publication"><i class="bi bi-journal-bookmark navicon"></i><span> Publications </span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
             <li><div class="tab" onclick="showSection('publications')"><a href="#publications">Publications</a></div></li>
-            <li><div class="tab" onclick="showSection('conferences')"><a href="#conference">Conferences</a></div></li>
-            <li><div class="tab" onclick="showSection('workshops')"><a href="#workshops">Workshops</a></div></li>
-          </ul> -->
+            <li><div class="tab" onclick="showSection('conferences')"><a href="#conference">Conference Presentation</a></div></li>
+            <!-- <li><div class="tab" onclick="showSection('workshops')"><a href="#workshops">Workshops</a></div></li> -->
+          </ul>
+        </li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
         <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
         <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
@@ -567,11 +568,11 @@
       </div><!-- End Section Title -->
 
       <div class="container">
-          <!-- <div class="tabs">
+          <div class="tabs">
               <div class="tab active" onclick="showSection('publications')">PUBLICATIONS</div>
-              <div class="tab" onclick="showSection('conferences')" >CONFERENCES</div>
-              <div class="tab" onclick="showSection('workshops')">WORKSHOPS</div>
-          </div> -->
+              <div class="tab" onclick="showSection('conferences')" >PAPER PRESENTED IN CONFERENCES</div>
+              <!-- <div class="tab" onclick="showSection('workshops')">WORKSHOPS</div> -->
+          </div>
 
           <div id="publications" class="content active">
             <!-- 2022 Publication -->
@@ -584,7 +585,7 @@
               </h3>
               <p><strong>Rajkrishna Mondal</strong> and Pankaj Srivastava</p>
               <p><i>International Journal of Fuzzy System Applications (IJFSA)</i></p>
-              <p>Vol. 11(1) (pp. 1-22), IGI Global</p>
+              <p>Vol. 11(1) (pp. 1-22), IGI Global<br> </br></p>
             </div>
           
             <!-- 2021 Publication: Intelligent Information System -->
@@ -601,7 +602,7 @@
                   Mathematical, Computational Intelligence and Engineering Approaches for Tourism, Agriculture and Healthcare (LNNS, Volume 214)
                 </i>
               </p>
-              <p>Lecture Notes in Networks and Systems, pp. 195–207, Springer</p>
+              <p>Lecture Notes in Networks and Systems, pp. 195–207, Springer<br> </br></p>
             </div>
           
             <!-- 2021 Publication: QUALIFLEX Ranking System -->
@@ -616,7 +617,7 @@
               <p>
                 <i>2021 International Conference on Computing, Communication, and Intelligent Systems (ICCCIS 2021)</i>
               </p>
-              <p>(pp. 78-85), IEEE</p>
+              <p>(pp. 78-85), IEEE<br> </br></p>
             </div>
           
             <!-- 2021 Publication: Kidney Performance Assessment -->
@@ -631,7 +632,7 @@
               <p>
                 <i>International Transaction Journal of Engineering, Management, and Applied Sciences and Technologies</i>
               </p>
-              <p>Vol. 12(4), (pp. 12A4A:1-14), TuEngr Group</p>
+              <p>Vol. 12(4), (pp. 12A4A:1-14), TuEngr Group<br> </br></p>
             </div>
           
             <!-- 2021 Publication: Hesitant Fuzzy Envelope Expert System -->
@@ -644,7 +645,7 @@
               </h3>
               <p><strong>Pankaj Srivastava</strong> and Rajkrishna Mondal</p>
               <p><i>Nepal Journal of Mathematical Sciences</i></p>
-              <p>Vol. 2(1) (pp. 1-6), ISSN: 2738-9928</p>
+              <p>Vol. 2(1) (pp. 1-6), ISSN: 2738-9928<br> </br></p>
             </div>
           
             <!-- 2020 Publication: Diabetes Diagnostic System -->
@@ -657,7 +658,7 @@
               </h3>
               <p><strong>Pankaj Srivastava</strong> and Rajkrishna Mondal</p>
               <p><i>TEST Engineering and Management</i></p>
-              <p>Vol. 82: Jan/Feb 2020 (pp. 14455-4467), The Mattingley Publishing Co., Inc</p>
+              <p>Vol. 82: Jan/Feb 2020 (pp. 14455-4467), The Mattingley Publishing Co., Inc<br> </br></p>
             </div>
           
             <!-- 2019 Publication: Medical Diagnostic Information System -->
@@ -674,7 +675,7 @@
               <p>
                 <i>Advances in VLSI, Communication, and Signal Processing</i>
               </p>
-              <p>(pp. 971–980), Springer</p>
+              <p>(pp. 971–980), Springer<br> </br></p>
             </div>
           
             <!-- 2018 Publication: WSN Clustering -->
@@ -691,7 +692,7 @@
               <p>
                 <i>2018 First International Conference on Secure Cyber Computing and Communication (ICSCCC)</i>
               </p>
-              <p>(pp. 208-212), IEEE</p>
+              <p>(pp. 208-212), IEEE<br> </br></p>
             </div>
           </div>
           
@@ -862,11 +863,11 @@
     <!-- conference and Workshops Section -->
     <section id="portfolio" class="portfolio section light-background">
 
-      <!-- Section Title -->
+      <!--  Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Attended Conferences and Workshops</h2>
         <p>The various conferences and workshops I have attended, where I have had the opportunity to present research, participate in discussions, and gain hands-on experience in emerging technologies. Conferences have allowed me to engage with experts, explore the latest advancements, and contribute to knowledge-sharing in fields like artificial intelligence, data science, and cybersecurity. Meanwhile, workshops have provided immersive, practical learning experiences, enhancing my skills in areas such as cloud computing, cybersecurity, and machine learning. Together, these experiences have broadened my understanding and strengthened my expertise, fostering continuous learning and professional growth.</p>
-      </div><!-- End Section Title -->
+      </div><!-- End Title -->
 
       <div class="container">
 
@@ -876,155 +877,244 @@
             <li data-filter="*" class="filter-active">All</li>
             <li data-filter=".filter-conference">Conferences</li>
             <li data-filter=".filter-workshop">Workshops</li>
-          </ul><!-- End Portfolio Filters -->
+          </ul><!-- End Filters -->
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
+            <!-- start conference Item -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-conference">
               <div class="portfolio-content h-100">
-                <img src="assets/img/conferences/16_08_2017 8_34 AM Office Lens.jpg" class="img-fluid" alt="">
+                <img src="assets\img\conferences\conference FAI 2021.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>App 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/conferences/16_08_2017 8_34 AM Office Lens.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>24th FAI-ICDBSMD 2021</h4>
+                  <p>25-27 June, 2021</p>
+                  <a href="assets\img\conferences\conference FAI 2021.png" title="24th FAI International Conference on Global Trends of Data Analytics in Business Management, Social Sciences, Medical Sciences and Decision making" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="conference-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div><!-- End conference Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+            <!-- start conference Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-conference">
               <div class="portfolio-content h-100">
-                <img src="assets/img/conferences/16_08_2017 8_36 AM Office Lens.jpg" class="img-fluid" alt="">
+                <img src="assets\img\conferences\conference Noida 2021.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Product 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/conferences/16_08_2017 8_36 AM Office Lens.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>ICCCIS-2021</h4>
+                  <p>19-20 February, 2021</p>
+                  <a href="assets\img\conferences\conference Noida 2021.png" title="International Conference on Computing, Communication, and Intelligent Systems(ICCCIS-2021)" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="conference-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div><!-- End conference Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+            <!-- start conference Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-conference">
               <div class="portfolio-content h-100">
-                <img src="assets/img/conferences/16_08_2017 8_37 AM Office Lens.jpg" class="img-fluid" alt="">
+                <img src="assets\img\conferences\conference Lucknow 2019.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Branding 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/conferences/16_08_2017 8_37 AM Office Lens.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>CMAA -2019</h4>
+                  <p>16-17 Nov, 2019</p>
+                  <a href="assets\img\conferences\conference Lucknow 2019.jpg" title="Conference on Modern Analysis and Applications – An International Meet (CMAA -2019)
+(67th Annual Conference of Bharat Ganita Parishad)" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="conference-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div><!-- End conference Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+            <!-- start conference Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-conference">
               <div class="portfolio-content h-100">
-                <img src="assets/img/conferences/16_08_2017 8_38 AM Office Lens.jpg" class="img-fluid" alt="">
+                <img src="assets\img\conferences\conference Gorakhpur 2019.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Books 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/conferences/16_08_2017 8_38 AM Office Lens.jpg" title="Branding 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>RTDC2-2019</h4>
+                  <p>15-16 Apr, 2019</p>
+                  <a href="assets\img\conferences\conference Gorakhpur 2019.jpg" title="National Conference on Recent Trends in Devices, Circuits and Communication(RTDC2-2019)" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="conference-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div><!-- End conference Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+            <!-- start conference Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-conference">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="">
+                <img src="assets\img\conferences\conference MNNIT VCAS 2018.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>App 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-2.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>VCAS 2018</h4>
+                  <p>29 Nov-1 Dec, 2018</p>
+                  <a href="assets\img\conferences\conference MNNIT VCAS 2018.jpg" title="International Conference on VLSI, Communication and Signal Processing(VCAS 2018)" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="conference-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div><!-- End conference Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+            <!-- start conference Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-conference">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-2.jpg" class="img-fluid" alt="">
+                <img src="assets\img\conferences\conference Tripura 2018.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Product 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-2.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
+                  <h4>ICRTMS-2018</h4>
+                  <p>24-25 Mar, 2018</p>
+                  <a href="assets\img\conferences\conference Tripura 2018.jpg" title="International Conference on Recent Trends in Mathematical Sciences (ICRTMS-2018)" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="conference-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a></div>
               </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+            </div><!-- End conference Item -->
+            
+            <!-- start workshop Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-workshop">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-2.jpg" class="img-fluid" alt="">
+                <img src="assets\img\conferences\conference outside.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Branding 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>ACTUAL PROBLEMS OF PHYSICAL CULTURE, SPORTS AND HEALTH</h4>
+                  <p>27-28 May, 2021</p>
+                  <a href="assets\img\conferences\conference outside.jpg" title="II International Scientific Internet Conference on,
+ACTUAL PROBLEMS OF PHYSICAL CULTURE, SPORTS AND HEALTH,
+Jointly Organized by The Bohdan Khmelnytsky National University of Cherkasy" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="conference-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div><!-- End workshop Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+            <!-- start workshop Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-workshop">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt="">
+                <img src="assets\img\conferences\workshop IIIT Allahabad.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Books 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>MACHINE LEARNING WORKSHOP</h4>
+                  <p>7-8 Sept, 2019</p>
+                  <a href="assets\img\conferences\workshop IIIT Allahabad.jpg" title="MACHINE LEARNING WORKSHOP conducted by
+Kyrion Technologies Pvt. Ltd. at IIIT Allahabad" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="conference-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div><!-- End workshop Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+            <!-- start workshop Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-workshop">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="">
+                <img src="assets\img\conferences\workshop MATLAB MNNIT 2019.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>App 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-3.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>AMST-2019</h4>
+                  <p>1-5 April, 2019</p>
+                  <a href="assets\img\conferences\workshop MATLAB MNNIT 2019.jpg" title="Application of MATLAB in Science and Technology (AMST-2019), 
+Jointly Organized by MNNIT Allahabad and KNIT Sultanpur" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="conference-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div><!-- End workshop Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+            <!-- start workshop Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-workshop">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt="">
+                <img src="assets\img\conferences\workshop MNNIT cryptography.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Product 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-3.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>National Instructional Workshop on Cryptology 2018</h4>
+                  <p>6-10 Jun, 2018</p>
+                  <a href="assets\img\conferences\workshop MNNIT cryptography.jpg" title="National Instructional Workshop on Cryptology, 
+Organized by MNNIT Allahabad in collaboration with Cryptology Research Society of India" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="conference-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div><!-- End workshop Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+            <!-- start workshop Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-workshop">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-3.jpg" class="img-fluid" alt="">
+                <img src="assets\img\conferences\workshop GAIN IIT patna.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Branding 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-3.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>Fuzzy Techniques for Intelligent Decision Making</h4>
+                  <p>11-15 Dec, 2017</p>
+                  <a href="assets\img\conferences\workshop GAIN IIT patna.jpg" title="Fuzzy Techniques for Intelligent Decision Making, 
+Organized by IIT Patna in collaboration with Global Initiative of Academic Networks (GIAN)" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="conference-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div><!-- End workshop Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+            <!-- start workshop Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-workshop">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt="">
+                <img src="assets\img\conferences\workshop IIT Kanpur.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Books 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-3.jpg" title="Branding 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>Big Data</h4>
+                  <p>7-11 Aug, 2017</p>
+                  <a href="assets\img\conferences\workshop IIT Kanpur.jpg" title="Big Data, 
+Organized by IIT Kanpur in collaboration with Knowledge Incubation for TEQIP" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="conference-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div><!-- End workshop Item -->
 
-          </div><!-- End Portfolio Container -->
+            <!-- start workshop Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-workshop">
+              <div class="portfolio-content h-100">
+                <img src="assets\img\conferences\workshop MNNIT ML R.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Data Analytics and Machine Learning with R (DAMLR-17)</h4>
+                  <p>29 May -2 Jun, 2017</p>
+                  <a href="assets\img\conferences\workshop MNNIT ML R.jpg" title="Data Analytics and Machine Learning with R (DAMLR-17), 
+Organized by the Department of Computer Science & Engineering, MNNIT Allahabad" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="conference-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End workshop Item -->
+
+            <!-- start workshop Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-workshop">
+              <div class="portfolio-content h-100">
+                <img src="assets\img\conferences\workshop MNNIT MATLAB16.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Application of MATLAB in Science, Technology and Management (AMSTM-2016)</h4>
+                  <p>1-7 Dec, 2016</p>
+                  <a href="assets\img\conferences\workshop MNNIT MATLAB16.jpg" title="Application of MATLAB in Science, Technology and Management (AMSTM-2016), 
+Organized by MNNIT Allahabad" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="conference-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End workshop Item -->
+
+            <!-- start workshop Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-workshop">
+              <div class="portfolio-content h-100">
+                <img src="assets\img\conferences\workshop MNNIT RMSET16.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Role of Mathematical Sciences in Engineering and Technology (RMSET-16)</h4>
+                  <p>19-23 Oct, 2016</p>
+                  <a href="assets\img\conferences\workshop MNNIT RMSET16.jpg" title="Role of Mathematical Sciences in Engineering and Technology (RMSET-16), 
+organized by the Department of Mathematics, MNNIT Allahabad" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="conference-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End workshop Item -->
+
+            <!-- start workshop Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-workshop">
+              <div class="portfolio-content h-100">
+                <img src="assets\img\conferences\workshop HRI 2015.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Summer Program in Mathematics (SPIM)</h4>
+                  <p>8-26 Jun, 2015</p>
+                  <a href="assets\img\conferences\workshop HRI 2015.jpg" title="Summer Program in Mathematics (SPIM), 
+organized by Harish-Chandra Research Institute, Prayagraj" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="conference-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End workshop Item -->
+
+            <!-- start workshop Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-workshop">
+              <div class="portfolio-content h-100">
+                <img src="assets\img\certificate old\BHUGOL MANCH.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Talent Search Test on Geography</h4>
+                  <p>2005</p>
+                  <a href="assets\img\certificate old\BHUGOL MANCH.jpg" title="Talent Search Test On Geography, 
+Organised by: CONTAI BHUGOL MANCHA" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="conference-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End workshop Item -->
+
+          </div><!-- End Container -->
 
         </div>
 
