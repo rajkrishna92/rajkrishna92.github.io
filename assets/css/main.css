@@ -1541,5 +1541,128 @@ Resume
 }
 
 
+/* Research Section */
+/* Work Experience Section */
+.work-experience-section {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
 
 
+/* Experience Card Styling */
+.experience-card {
+  position: relative; /* Added so that .year-badge is positioned relative to the card */
+  background: #d3d3d3;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 1);
+}
+
+/* Year Badge Styling */
+.year-badge {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background: #ff0000;
+  color: #ffffff;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Job Title & Company */
+.experience-card h3 {
+  font-size: 24px;
+  color: #0056b3;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.experience-card h4 {
+  font-size: 20px;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.work-dates {
+  font-size: 16px;
+  color: #777;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+/* Descriptions & Responsibilities */
+.experience-card p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+/* Subsection Titles */
+.experience-card h5 {
+  font-size: 18px;
+  color: #007bff;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* List Styling */
+.experience-card ul {
+  list-style: none; /* Remove default bullets */
+  padding-left: 20px;
+}
+
+.experience-card ul li {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.experience-card ul li::before {
+  content: "✔";
+  color: #28a745;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+/* Nested List for Subpoints */
+.experience-card ul ul {
+  padding-left: 20px;
+}
+
+.experience-card ul ul li::before {
+  content: "➤";
+  color: #ffc107;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .experience-card {
+      padding: 20px;
+  }
+
+  .section-title h2 {
+      font-size: 28px;
+  }
+
+  .experience-card h3 {
+      font-size: 22px;
+  }
+
+  .experience-card h4 {
+      font-size: 18px;
+  }
+}
