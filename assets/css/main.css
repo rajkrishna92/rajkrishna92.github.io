@@ -1594,11 +1594,22 @@ Resume
 }
 
 .work-dates {
-  font-size: 16px;
-  color: #777;
-  font-style: italic;
+  font-size: 18px; /* Increased font size for better visibility */
+  color: #0b0b0b; /* Dark text color */
+  font-weight: bold; /* Ensures bold text */
+  font-family: Arial, sans-serif; /* Clean and professional font */
   margin-bottom: 15px;
+  letter-spacing: 0.5px; /* Slight spacing for readability */
+  /* text-transform: uppercase; Emphasizes text */
+  background-color: rgba(245, 245, 245, 0.2); /* Light background for contrast */
+  padding: 5px 10px; /* Adds spacing around text */
+  border-radius: 5px; /* Soft rounded edges */
+  display: inline-block; /* Ensures styling wraps around content */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .8); /* Subtle shadow effect */
+  /*text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);  Adds depth to text */
 }
+
+
 
 /* Descriptions & Responsibilities */
 .experience-card p {
