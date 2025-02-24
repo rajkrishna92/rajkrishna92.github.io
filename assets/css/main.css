@@ -1188,14 +1188,13 @@ Resume
 }
 
 .testimonials .testimonial-item p {
-  font-style: italic;
   margin: 0 15px 15px 15px;
   padding: 20px;
   background-color: var(--surface-color);
   position: relative;
   margin-bottom: 35px;
   border-radius: 6px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
 }
 
 .testimonials .testimonial-item p::after {
