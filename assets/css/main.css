@@ -1683,3 +1683,19 @@ Resume
       font-size: 18px;
   }
 }
+
+
+.sent-message, .error-message {
+  color: white !important;  /* Ensures text is white */
+  padding: 15px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.sent-message {
+  background-color: green; /* Green background for success */
+}
+
+.error-message {
+  background-color: red; /* Red background for errors */
+}

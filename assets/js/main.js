@@ -243,3 +243,39 @@ function showSection(sectionId) {
   document.getElementById(sectionId).classList.add('active');
   event.currentTarget.classList.add('active');
 };
+
+
+document.getElementById("contact-form").addEventListener("submit", async function(event) {
+  event.preventDefault();
+
+  let form = this;
+  let formData = new FormData(form);
+  let loadingMessage = document.querySelector(".loading");
+  let successMessage = document.querySelector(".sent-message");
+  let errorMessage = document.querySelector(".error-message");
+
+  loadingMessage.style.display = "block";
+  successMessage.style.display = "none";
+  errorMessage.style.display = "none";
+
+  try {
+    let response = await fetch(form.action, {
+      method: form.method,
+      body: formData,
+      headers: { "Accept": "application/json" }
+    });
+
+    if (response.ok) {
+      successMessage.style.display = "block";
+      errorMessage.style.display = "none";
+      form.reset(); // Clear the form after successful submission
+    } else {
+      throw new Error("Submission error");
+    }
+  } catch (error) {
+    errorMessage.style.display = "block";
+    errorMessage.textContent = "An error occurred. Please try again.";
+  } finally {
+    loadingMessage.style.display = "none";
+  }
+});
