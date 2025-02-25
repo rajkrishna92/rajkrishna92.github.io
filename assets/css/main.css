@@ -1675,10 +1675,6 @@ Resume
       padding: 20px;
   }
 
-  .section-title h2 {
-      font-size: 28px;
-  }
-
   .experience-card h3 {
       font-size: 22px;
   }
@@ -1686,6 +1682,7 @@ Resume
   .experience-card h4 {
       font-size: 18px;
   }
+  
 }
 
 
