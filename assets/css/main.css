@@ -522,17 +522,21 @@ section,
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
+  text-align: center; /* Centers the text */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adds a soft shadow to the text */
 }
 
 .section-title h2:after {
   content: "";
   position: absolute;
-  display: block;
-  width: 50px;
-  height: 3px;
-  background: var(--accent-color);
-  left: 0;
+  left: 50%;
   bottom: 0;
+  width: 300px; /* Adjust width as needed */
+  height: 4px;
+  background: #000; /* Change color as needed */
+  transform: translateX(-50%);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9); /* Adds a shadow effect below the underline */
+  border-radius: 2px;
 }
 
 .section-title p {
