@@ -1,0 +1,574 @@
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+% (c) 2008 Nathaniel Johnston <nathaniel@nathanieljohnston.com> http://www.nathanieljohnston.com
+% (l) 2012 Arun I B <arunib@smail.iitm.ac.in> http://www.ee.iitm.ac.in/~ee10s026/
+%This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 2.5 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/2.5/ or send a letter to Creative Commons, 543 Howard Street, 5th Floor, San Francisco, California, 94105, USA.
+
+\documentclass[letterpaper,11pt]{article}
+\newlength{\outerbordwidth}
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\usepackage[svgnames]{xcolor}
+\usepackage{ marvosym }
+\usepackage{url}
+\usepackage{framed}
+\usepackage{times}
+\usepackage{tocloft}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage[utf8]{inputenc}
+\usepackage{tabularx}
+\usepackage{lastpage}
+\usepackage{enumerate}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\pagestyle{fancy}
+\fancyhf{}
+\lfoot{Page \thepage \,of \pageref{LastPage}}
+%\fancyfoot[CO,CE]{Page \thepage\ of \pageref{LastPage}}{5cm}
+
+% Uncomment to remove the header rule
+ \renewcommand{\headrulewidth}{0pt} 
+
+
+
+\title{Rajkrishna-CV}
+%-----------------------------------------------------------
+%Edit these values as you see fit
+
+\setlength{\outerbordwidth}{3pt}  % Width of border outside of title bars
+\definecolor{shadecolor}{gray}{0.75}  % Outer background color of title bars (0 = black, 1 = white)
+\definecolor{shadecolorB}{gray}{0.93}  % Inner background color of title bars
+
+
+%-----------------------------------------------------------
+%Margin setup
+
+\setlength{\evensidemargin}{-0.25in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\paperheight}{11in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\tabcolsep}{0in}
+\setlength{\textheight}{9.5in}
+\setlength{\textwidth}{7in}
+\setlength{\topmargin}{-0.3in}
+\setlength{\topskip}{0in}
+\setlength{\voffset}{0.1in}
+
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{\vspace{8pt}
+  \parbox{\textwidth}{\setlength{\FrameSep}{\outerbordwidth}
+    \begin{shaded}
+\setlength{\fboxsep}{0pt}\framebox[\textwidth][l]{\setlength{\fboxsep}{4pt}\fcolorbox{shadecolorB}{shadecolorB}{\textbf{\sffamily{\mbox{~}\makebox[6.762in][l]{\large #1} \vphantom{p\^{E}}}}}}
+    \end{shaded}
+  }\vspace{-5pt}
+}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}}
+%-----------------------------------------------------------
+
+
+\begin{document}
+
+%-----------------------------------------------------------
+%Insert IIT Madras Logo 
+
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+  & \\
+%-----------------------------------------------------------  
+  \textbf{\Huge Dr. Rajkrishna Mondal} & \\
+% {\Large \textbf{Research Scholar, Department of Mathematics}} & \\
+% {\large Motilal Nehru National Institute of Technology Allahabad,     Prayagraj, Uttar Pradesh 211004, India } \\
+\includegraphics[scale=.03]{website}
+{\textbf{\Large \url{https://rajkrishna92.github.io}}} \\
+\includegraphics[scale=.025]{github}
+{\large \url{https://github.com/rajkrishna92}}\\
+\includegraphics[scale=.025]{linkedin}
+{\large \url{https://www.linkedin.com/in/rajkrishna92}}\\
+ \includegraphics[scale=.005]{email}
+  \href{mailto:rajkrishna.genai@gmail.com}{\url{rajkrishna.genai@gmail.com}}\\
+  \includegraphics[scale=.025]{phone}
+  \includegraphics[scale=.025]{whatsapp}
+  7843909820 
+\end{tabular*}
+\\
+\hfill  \smash{\includegraphics[scale=.33]{raj_newpic}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{OBJECTIVE}
+\begin{center}
+ \parbox{6.762in}{To be honest towards my work and to achieve a position in industry and research world to utilize my skills and abilities in a renowned organization that allows me to expand upon my knowledge and skills by contributing in the best way and offers security and growth while being resourceful, innovative, and flexible.}
+ \end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{AREA OF INTEREST (SPECIALIZATION)}
+\begin{itemize}
+\item Artificial Intelligence
+\item Generative AI, Agentic AI
+\item Natural Language Processing
+\item Prompt Engineering
+\item Data Science
+\item Big Data
+\item Soft Computing
+\item Mathematical Modeling
+\item Design and Development of Algorithms
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{EDUCATIONAL PROFILE}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{enumerate}
+\item
+	\ressubheading{Doctor of Philosophy}{Motilal Nehru National Institute of Technology Allahabad}{Mathematics}{August-2022}
+	\begin{itemize}
+		\resitem{ Topic of Research: ``A study on Design and Development of Soft Computing Diagnostic information system in Medical Science"}
+	\end{itemize}
+
+\item
+	\ressubheading{Master of Science}{Motilal Nehru National Institute of Technology Allahabad}{Mathematics and Scientific Computing, CPI: 7.62}{June-2016}
+	\begin{itemize}
+		\resitem{ Project Title: ``On Perspectives and Application of Fuzzy Initial Value Problems"}
+	\end{itemize}
+	
+\item
+	\ressubheading{Bachelor of Science}{Calcutta University}{Mathematics Honours, Marks obtained: 61.25\%}{July-2014}
+	
+\item
+	\ressubheading{Higher Secondary}{Contai Model Institution, WBCHSE}{Class XII, Marks obtained: 79.40\%}{May-2009}
+	
+\item
+	\ressubheading{Madhyamik}{Majilapore Birendra Vidyapith, WBBSE}{Class X, Marks obtained: 79.75\%}{May-2007}
+
+\end{enumerate}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{WORK EXPERIENCE}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% ==========================================================
+% ROLE 1: Accrete AI (Current)
+% ==========================================================
+\ressubheading{Senior Prompt Engineer}{Accrete AI}{}{09 June, 2025 - Present}{}
+\\
+\noindent{Spearhead the architecture, engineering, and production deployment of scalable Generative AI systems, transforming raw LLM capabilities into robust, enterprise-grade agentic workflows and analytical tools.}
+
+\subsection*{Technical Overview}
+
+\textbf{Generative AI \& Agentic Architecture:}
+    \begin{itemize}
+        \item Architect and optimize complex RAG (Retrieval-Augmented Generation) pipelines utilizing Vector Stores (Chroma) and semantic search to minimize hallucinations and maximize context relevance.
+        \item Design autonomous agentic workflows from scratch using Google’s Agent Development Kit (ADK) and LangGraph, enabling multi-step reasoning and tool execution.
+        \item Engineer high-impact prompt strategies (Few-Shot, Chain-of-Thought) for diverse LLMs (OpenAI GPT-4, Gemini, Ollama) to ensure deterministic outputs in production environments.
+        \item Implement the Model Context Protocol (MCP) to facilitate secure, standardized interactions between LLMs and external data sources or tools.
+    \end{itemize}
+
+\textbf{Python Development \& Engineering:}
+    \begin{itemize}
+        \item Develop high-performance backend microservices using Python and FastAPI to expose Gen AI capabilities as scalable APIs.
+        \item Build and maintain automated prompt-to-code pipelines and visualization tools, leveraging Python libraries for dynamic data rendering.
+        \item Write robust Python scripts for automated evaluation, utilizing LLM-as-a-Judge frameworks to continuously monitor response quality, latency, and bias.
+    \end{itemize}
+
+\textbf{DevOps \& MLOps Integration:}
+    \begin{itemize}
+        \item Own the end-to-end deployment lifecycle, utilizing Docker for containerization and Kubernetes for orchestration to ensure high availability of AI services.
+        \item Manage CI/CD pipelines to automate testing and deployment of prompt versions and Python application code.
+        \item Collaborate with cloud infrastructure teams to optimize GPU resource allocation and server-side performance.
+    \end{itemize}
+
+\textbf{Leadership \& Governance:}
+    \begin{itemize}
+        \item Establish organizational prompt governance, version control standards, and best practices for secure LLM integration.
+        \item Mentor junior engineers and data scientists on advanced Python patterns and prompt engineering techniques.
+    \end{itemize}
+
+\subsection*{Impact}
+\begin{itemize}
+    \item \textbf{Production Efficiency:} Improved system latency and reliability by transitioning experimental notebooks into production-ready, containerized Python applications.
+    \item \textbf{Scalable Innovation:} Enabled the rapid deployment of new AI features by creating reusable prompt templates and modular agent architectures.
+    \item \textbf{Quality Assurance:} Implemented automated bias-mitigation and safety controls, ensuring enterprise compliance and reducing risk in AI-generated outputs.
+    \item \textbf{Strategic Integration:} Bridged the gap between business requirements and technical implementation, delivering AI solutions that directly address core product needs.
+\end{itemize}
+
+\vspace{0.5cm}
+
+% ==========================================================
+% ROLE 2: Infinity Analytics (Previous)
+% ==========================================================
+\ressubheading{Data Scientist (Project Lead Developer) }{Infinity Analytics Pvt. Ltd., Mumbai}{}{26 September, 2021 - 11 May, 2025}{}
+\\
+\noindent{Lead design, development, and deployment of an AI-powered cognitive search engine that transforms data interaction through advanced NLP, large language models (LLMs), and agent-based workflows.}
+
+\subsection*{Technical Overview}
+
+\textbf{Technical Vision \& Architecture:}
+    \begin{itemize}
+        \item Define and implement system architecture integrating LLMs, NLP modules, and agent-based processes.
+        \item Design core modules: Natural language query processing, document ingestion, entity extraction, and automated SQL generation using LangChain and LangGraph.
+    \end{itemize}
+
+\textbf{Team Leadership \& Project Management:}
+    \begin{itemize}
+        \item Mentor a multi-disciplinary team of developers, data scientists, and engineers.
+        \item Manage timelines, coordinate cross-functional teams, and mitigate risks to meet milestones within budget and time.
+    \end{itemize}
+
+\textbf{Development \& Integration:}
+    \begin{itemize}
+        \item Integrate AI components (LLMs like OpenAI, Ollama; vector stores like Chroma; agent frameworks) into a cohesive platform.
+        \item Build pipelines for processing unstructured data using document loaders, text splitters, and memory management.
+        \item Automate tasks such as converting natural language queries to SQL, generating visualizations, and interfacing with APIs (FastAPI).
+    \end{itemize}
+
+\textbf{Quality Assurance \& Deployment:}
+    \begin{itemize}
+        \item Enforce coding standards via code reviews and rigorous testing.
+        \item Oversee CI/CD pipelines for scalable, secure deployments while ensuring data security and compliance.
+    \end{itemize}
+
+\textbf{Stakeholder Communication:}
+    \begin{itemize}
+        \item Act as the technical liaison, translating complex AI concepts into actionable business insights.
+        \item Prepare documentation, reports, and presentations for stakeholders.
+    \end{itemize}
+
+\subsection*{Impact}
+\begin{itemize}
+    \item \textbf{Enhancement of Business Operations:} The AI-powered cognitive search engine improves efficiency, accuracy, and accessibility of data across the organization, leading to substantial business growth, revenue increase, and superior customer engagement.
+    
+    \item \textbf{Business Growth:}
+    \begin{itemize}
+        \item Facilitates faster and more accurate data retrieval, improving decision-making across all departments.
+        \item Streamlines internal processes by automating data extraction, reducing manual effort and operational costs.
+        \item Enhances innovation by enabling employees to focus on strategic initiatives instead of data wrangling.
+    \end{itemize}
+    
+    \item \textbf{Revenue Growth:}
+    \begin{itemize}
+        \item Provides deeper business insights, helping identify new revenue streams and optimizing existing ones.
+        \item Improves marketing and sales strategies by analyzing customer interactions and preferences.
+        \item Automates reporting and analytics, reducing time-to-insight and enabling proactive business strategies.
+    \end{itemize}
+    
+    \item \textbf{Customer Experience \& Satisfaction:}
+    \begin{itemize}
+        \item Enhances customer service by delivering accurate, AI-driven responses to queries in real-time.
+        \item Personalizes user experience by leveraging AI to understand and predict customer needs.
+        \item Reduces response times and increases customer retention by providing relevant information instantly.
+    \end{itemize}
+    
+    \item \textbf{Competitive Advantage:}
+    \begin{itemize}
+        \item Enables intelligent automation, reducing operational costs and improving productivity.
+        \item Strengthens data-driven decision-making, allowing for more strategic business moves.
+        \item Enhances user engagement and retention by offering seamless and efficient data accessibility.
+    \end{itemize}
+\end{itemize}
+By integrating this advanced AI solution, the company gains a competitive advantage through intelligent automation, data-driven decision-making, and improved user engagement, ultimately ensuring long-term success.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{TECHNICAL SKILLS}
+\begin{itemize}
+\item \textbf{Operating Platform} : Linux; MacOS; Windows
+\item \textbf{Programming Language} : C, C++, Python, R, mySQL
+\item \textbf{Other Software/Tools} : Scikit-Learn, Numpy, Pandas, Statsmodels, Seaborn, Plotly, Matplotlib, TensorFlow, Keras, Spacy, NLTK, MATLAB, Excel, Tableau, Power BI, PySpark, PyTorch, LangChain, LangGraph, CrewAI, Llama Index, OpenAI
+\item \textbf{Database/Server}: My SQL, SQL Server
+\item \textbf{Typeset Software} : \LaTeX, Microsoft Word
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{LICENSES \& CERTIFICATIONS}
+\begin{itemize}
+	
+	\item \textbf{Complete SQL Mastery} (\url{https://codewithmosh.com/p/complete-sql-mastery})
+
+	\item \textbf{Machine Learning A-Z™: Hands-On Python \& R In Data Science} (\url{https://www.udemy.com/course/machinelearning/})
+	
+	\item \textbf{Deep Learning Specialization :}
+	\begin{itemize}
+	\item \textbf{Neural Networks and Deep Learning} by DeepLearning.AI on \textit{Coursera}\\ (Certificate: \url{https://coursera.org/share/9198bf9e5641668612752b5cd17be8a2})
+	
+	\item \textbf{Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization} by DeepLearning.AI on \textit{Coursera}\\ (Certificate: \url{https://coursera.org/share/def05c9d5e90c88e02398c19677d6bfc})
+	
+	\item \textbf{Sequence Models} by DeepLearning.AI on \textit{Coursera}\\ (Certificate: \url{https://coursera.org/share/9db5dc52cfdba73e6bd6cdd756d19839})
+	\end{itemize}
+	\item \textbf{Deep Neural Networks with PyTorch} by IBM Skills Network on \textit{Coursera}\\ (Certificate: \url{https://coursera.org/share/93538b50a9cefdb14804a6a08efdd10c})
+	
+	\item \textbf{Natural Language Processing Specialization :}
+	\begin{itemize}
+	\item \textbf{Natural Language Processing with Sequence Models} by DeepLearning.AI on \textit{Coursera}\\ (Certificate: \url{https://coursera.org/share/9a37b3c58962cc01cdc6c628acd96168})
+	\item \textbf{Natural Language Processing with Attention Models} by DeepLearning.AI on \textit{Coursera}\\ (Certificate: \url{https://coursera.org/share/1bf5c53cb5d028ddd77c80dec86affbf})
+	\end{itemize}
+	
+	\item \textbf{Big Data Specialization :}
+	\begin{itemize}
+	\item \textbf{Introduction to Big Data} by University of California San Diego on \textit{Coursera}\\ (Certificate: \url{https://coursera.org/share/204624b9502b77d2b2c68e43ab3361f6})
+	\item \textbf{Big Data Modeling and Management Systems} by University of California San Diego on \textit{Coursera}\\ (Certificate: \url{https://coursera.org/share/c1447ddbfc6ecf8a79f97fe33b8aa6c2})
+	\end{itemize}
+ \item \textbf{Generative AI with Large Language Models} by DeepLearning.AI on \textit{Coursera}\\ (Certificate: \url{https://coursera.org/share/5a3a44036e2e0271fc6370f3d9bbcf59})
+
+\item \textbf{Short Courses on Generative AI} on \textit{DeepLearning.AI}
+\begin{itemize}
+    \item \href{https://learn.deeplearning.ai/accomplishments/3a32accf-e87d-4400-9195-80b7cd127f2e?usp=sharing}{LangChain for LLM Application Development}
+    \item \href{https://learn.deeplearning.ai/accomplishments/66773573-827d-4b0a-af1b-e73dd2bcbd5c?usp=sharing}{LangChain Chat with Your Data}
+    \item \href{https://www.example.com/finetuning_large_language_models}{Finetuning Large Language Models}
+    \item \href{https://learn.deeplearning.ai/accomplishments/24543a7d-cfb9-4bb7-b9f8-be6900e795ba?usp=sharing}{Large Language Models with Semantic Search}
+    \item \href{https://rajkrishna92.blogspot.com/#}{Building Systems with the ChatGPT API}
+    \item \href{https://learn.deeplearning.ai/accomplishments/8c54c3d6-cf88-476e-af28-25ec538b4c91?usp=sharing}{Functions Tools and Agents with LangChain}
+    \item \href{https://learn.deeplearning.ai/accomplishments/0665d8f5-6bdc-430c-817b-2d2bef84cd66?usp=sharing}{Building and Evaluating Advanced RAG}
+    \item \href{https://learn.deeplearning.ai/accomplishments/cb372718-35be-4674-bfdc-95555f7a575d?usp=sharing}{Advanced Retrieval for AI with Chroma}
+    \item \href{https://learn.deeplearning.ai/accomplishments/0017c6ac-3dfd-421b-84ba-cee5e87f1a97?usp=sharing}{Knowledge Graphs for RAG}
+    \item \href{https://learn.deeplearning.ai/accomplishments/7c345c6a-50a3-4709-9ed7-baa7d53e8907?usp=sharing}{Preprocessing Unstructured Data for LLM Applications}
+    \item \href{https://learn.deeplearning.ai/accomplishments/a43b4b24-0a7a-42ea-9a55-352684c23479?usp=sharing}{Building Agentic RAG with LlamaIndex}
+    \item \href{https://learn.deeplearning.ai/accomplishments/e4853d56-5344-4b27-ae68-8e50e88fbe7f?usp=sharing}{Building Your Own Database Agent}
+    \item \href{https://learn.deeplearning.ai/accomplishments/cc0d7eef-29a3-4493-b882-78dd32ca3edb?usp=sharing}{Serverless Agentic Workflows with Amazon Bedrock}
+     \item \href{https://learn.deeplearning.ai/accomplishments/57aa055f-b4a2-41be-a7b9-d1459cb51c3c?usp=sharing}{Multi AI Agent Systems with crewAI}
+     \item \href{https://learn.deeplearning.ai/accomplishments/77e770d5-bc99-4e41-a7c0-e123b3dba9cf?usp=sharing}{Practical Multi AI Agents and Advanced Use Cases with crewAI}
+     \item \href{https://learn.deeplearning.ai/accomplishments/453e43e3-b04f-40a1-a064-a02f4569fdea?usp=sharing}{Reasoning with o1}
+     \item \href{https://learn.deeplearning.ai/accomplishments/ebf9a65a-709a-4e62-bccc-41b56360b32d?usp=sharing}{Long-Term Agentic Memory with LangGraph}
+     \item \href{https://learn.deeplearning.ai/accomplishments/315e4337-061d-4eec-8b0a-0b7edb65de10?usp=sharing}{MCP: Build Rich-Context AI Apps with Anthropic}
+\end{itemize}
+
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{COMPLETED SELF PROJECT}
+\begin{itemize}
+	
+	\item Design a MATLAB Application using self developed algorithm for diagnosing the various level of a Diabetic Patient with the help of complex life factors. \href{ https://github.com/rajkrishna92/Diabetes-Diagnostic-Intelligent-Information-System}{\includegraphics[scale=.025]{github}}
+	
+	\item Design a MATLAB Application to assess the Kidney
+	Performances of a Persons who is suffering from Diabetes. \href{ https://github.com/rajkrishna92/Intelligent-System-to-Assess-Kidney-Performances-of-Persons-Suffering-from-Diabetes}{\includegraphics[scale=.025]{github}}
+	
+	\item Design an Intelligent Diet recommendation MATLAB Application to maintain daily Nutritional Macros (like carbohydrate, protein, fat) percentage without help of a Nutritional Experts. \href{ https://github.com/rajkrishna92/Intelligent-Decision-Making-Model-and-Its-Application-to-Diet-Recommendation-System}{\includegraphics[scale=.025]{github}}
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{ATTEND WORKSHOPS, CONFERENCES \& SUMMER PROGRAMS}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{enumerate}
+
+\item
+\ressubheading{II International Scientific Internet Conference on},{\textbf{ACTUAL PROBLEMS OF PHYSICAL CULTURE, SPORTS AND HEALTH}}{27-28 May, 2021}\\{\hspace{20 mm}}\\{Jointly Organized by The Bohdan Khmelnytsky National University of Cherkasy}
+
+\item
+\ressubheading{Application of MATLAB in Science and Technology (AMST-2019)}{1-5 April, 2019}{Jointly Organized by MNNIT Allahabad and KNIT Sultanpur}{}
+	
+	
+\item
+	\ressubheading{National Instructional Workshop on Cryptology}{6-10 Jun, 2018}{Organized by MNNIT Allahabad in collaboration with Cryptology Research Society of India}{}
+	
+
+\item 
+	\ressubheading{Fuzzy Techniques for Intelligent Decision Making}{11-15 Dec, 2017}{Organized by IIT Patna in collaboration with Global Initiative of Academic Networks
+(GIAN)}{}
+	
+
+\item
+	\ressubheading{Big Data}{7-11 Aug, 2017}{Organized by IIT Kanpur in collaboration with Knowledge Incubation for TEQIP}{}
+
+\item
+	\ressubheading{Data Analytics and Machine Learning with R (DAMLR-17)}{29 May -2 Jun, 2017}{Organized by the Department of Computer Science \& Engineering, MNNIT Allahabad}{}
+	
+\item
+	\ressubheading{Application of MATLAB in Science, Technology and Management (AMSTM-2016)}{1-7 Dec, 2016}{Organized by
+MNNIT Allahabad}{}
+
+\item
+	\ressubheading{Role of Mathematical Sciences in Engineering and Technology (RMSET-16)}{19-23 Oct, 2016}{organized by the Department of Mathematics, MNNIT Allahabad}{}
+	
+\item
+	\ressubheading{Summer Program in Mathematics (SPIM)}{8-26 Jun, 2015}{organized by Harish-Chandra Research Institute, Prayagraj}{}
+	
+\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{PAPER PRESENTED IN CONFERENCES}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{enumerate}
+\item{\textbf{24th FAI International Conference on Global Trends of Data Analytics in Business Management, Social Sciences, Medical Sciences and Decision making(24th FAI-ICDBSMD 2021)}}\\
+Presented a paper entitled ``\textit{Fuzzy Utility Matrix based Intelligent Decision-Making Mathematical model and its application in Diet recommendation system for Metabolic Disorders patient}”.\\
+Organized by FATER Academy of India; Institute of Technology, Gopeshwar \& UNIFACVEST – University Center, Brazil during 25-27 June, 2021.
+
+\item{\textbf{International Conference on Computing, Communication, and Intelligent Systems(ICCCIS-2021)}}\\
+Presented a paper entitled ``\textit{QUALIFLEX based ranking system by using Interval Valued Hesitant Fuzzy Set and its application to rank the Diabetic patients}”.\\
+IEEE Conference Record 51004; ISBN No.: 978-1-7281-8529-3\\	
+Organized by Sharda University, Greater Noida, India during 19-20 February, 2021 .
+	
+
+\item{\textbf{International Conference on Recent Trends and Innovations in Multidisciplinary Research (ICRTIMR-2020)}}\\
+Presented a paper entitled ``\textit{Diabetes Diagnostic Intelligent Information System}”.\\	
+Organized by IEC University, Baddi, H.P., India Jointly organized by Globally Multidisciplinary Research and Education
+Association (GMREA) during 14 Mar, 2020.
+	
+\item{\textbf{International Conference on Engineering, Mathematical and Computational Intelligence (ICEMCI-2019)}}\\
+Presented a paper entitled ``\textit{Design and Development of Intelligent Information System using Hesitant Fuzzy Weighting Linguistic Term Sets for Computing with Words}”.\\	
+Organized by Jabalpur Engineering College, Jabalpur, Madhya Pradesh, India in association with FATER Academy of India and Walchand Engineering College, Sangli, Maharashtra, India during 21 Dec -23 Dec, 2019.
+
+\item{\textbf{Conference on Modern Analysis and Applications – An International Meet (CMAA -2019)}}\\(67th Annual Conference of Bharat Ganita Parishad)\\
+Presented a paper entitled ``\textit{Intelligent Diet Recommendation System for Metabolic Disorders Patient}”.\\	
+Organized by The Department of Mathematics and Computer Science, Babu Banarasi Das University, Lucknow 226028 (Uttar Pradesh), India in collaboration with Bharat Ganita Parishad, Lucknow, India during 16 Nov-17 Nov, 2019.
+
+\item{\textbf{National Conference on Recent Trends in Devices, Circuits and Communication(RTDC$^2$-2019)}}\\
+	Presented a paper entitled ``\textit{A Hesitant Fuzzy based expert system in Human Decision making}”.\\	
+Organized by Department of Electronics and Communication Engineering, Madan Mohan Malaviya University of Technology, Gorakhpur, UP, India during 15 Apr-16 Apr, 2019.
+
+\item{\textbf{International Conference on VLSI, Communication and Signal Processing(VCAS 2018)}}\\
+	Presented a paper entitled ``\textit{A Medical diagnostic information system with Computing with Words using Hesitant Fuzzy Sets}”.\\	
+Organized by ECED MNNIT Allahabad, during 29 Nov-1 Dec, 2018.
+
+
+\item{\textbf{International Conference on Recent Trends in Mathematical Sciences (ICRTMS-2018)}}\\
+	Presented a paper entitled ``\textit{Application of Hesitant Fuzzy Set for multi-criteria decision making Soft Computing Model in Diabetes Diagnostics}”.\\
+Organized by The Department of Applied Mathematics, Maharaja Bir Bikram University, Tripura, India in collaboration with Tripura Mathematical Society, Tripura, India, during 24-25 Mar, 2018.
+	
+\end{enumerate}
+
+%\resheading{CONFERENCE PROCEEDINGS}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{enumerate}
+%	
+%\item \textbf{Mondal, R.}, Verma, A., \& Gupta, P. K. (2020). A Medical Diagnostic Information System with Computing with Words Using Hesitant Fuzzy Sets. \textit{In Advances in VLSI, Communication, and Signal Processing} (pp. 971-980). Springer, Singapore.
+%
+%\item Verma, A., \textbf{Mondal, R.}, Gupta, P., \& Kumar, A. (2018, December). Neural based Energy-Efficient Stable Clustering for Multilevel Heterogeneous WSNs. \textit{In 2018 First International Conference on Secure Cyber Computing and Communication (ICSCCC)} (pp. 208-212). IEEE.
+%
+%\end{enumerate}
+
+
+\resheading{PUBLICATIONS}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{enumerate}
+	
+	\item \textbf{Mondal, R.}, \& Srivastava, P. (2022). Fuzzy Utility Matrix-Based Intelligent Decision-Making Model and Its Application to Diet Recommendation System for Metabolic Disorder Patients. \textit{International Journal of Fuzzy System Applications (IJFSA)}, 11(1), pp. 1-22. \url{http://doi.org/10.4018/IJFSA.303563}
+	
+	\item Srivastava, P \& \textbf{Mondal, R.}. (2021). Design and Development of
+	Intelligent Information System using Hesitant Fuzzy Weighting Linguistic Term
+	Sets for Computing with Words. \textit{Lecture Notes in Networks and Systems (Springer)}, 214(1), 2022, pp. IV, 446, Series ISSN: 2367-3370. \url{http://doi.org/10.1007/978-981-16-3807-7}.
+	
+	\item Srivastava, P \& \textbf{Mondal, R.}. (2021). QUALIFLEX based ranking system by using Interval Valued Hesitant Fuzzy Set and its application to rank the Diabetic patients. \textit{2021 International Conference on Computing, Communication, and Intelligent Systems (ICCCIS 2021)}, pp.78-85. \url{http://doi.org/10.1109/ICCCIS51004.2021.9397179}.(IEEE)
+	
+	\item \textbf{Mondal, R.} \& Srivastava, P. (2021). Design and Development of an Intelligent System to Assess Kidney Performances of Persons Suffering from Diabetes. \textit{International Transaction Journal of Engineering, Management, \& Applied Sciences \& Technologies}, 12(4), 12A4A, 1-14. \url{http://doi.org/10.14456/ITJEMAST.2021.64}
+	
+	\item Srivastava, P. \& \textbf{Mondal, R.} (2020). A Hesitant Fuzzy Envelope Based Expert System in Human Decision Making. \textit{Nepal Journal of Mathematical Sciences}, 2(1), 1-6. ISSN: 2738-9928 (online), 2738-9812 (print). \url{https://doi.org/10.3126/njmathsci.v2i1.36503}
+	
+	\item Srivastava, P. \& \textbf{Mondal, R.} (2020). Diabetes Diagnostic Intelligent Information System. \textit{TEST Engineering \& Management}, 82(Jan-Feb 2020), 14455-4467. \url{http://www.testmagzine.biz/index.php/testmagzine/article/view/3136}
+
+	\item \textbf{Mondal, R.}, Verma, A. \& Gupta, P.K. (2020). A Medical Diagnostic Information System with Computing with Words Using Hesitant Fuzzy Sets. \textit{Advances in VLSI, Communication, and Signal Processing}, pp.971-980 (Springer).\url{https://doi.org/10.1007/978-981-32-9775-3_86}.
+
+	\item Verma, A., \textbf{Mondal, R.}, Gupta, P. \& Kumar, Arvind (2018). Neural based energy-efficient stable clustering for multilevel heterogeneous WSNs. \textit{2018 First International Conference on Secure Cyber Computing and Communication (ICSCCC)}, pp.208-212 (IEEE).\url{https://doi.org/10.1109/ICSCCC.2018.8703353}
+
+\end{enumerate}
+
+\resheading{AWARDS}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+\item Best Paper Presentation on \textbf{International Conference on Recent Trends and Innovations in Multidisciplinary Research (ICRTIMR-2020)} organized by IEC University, Baddi, H.P., India Jointly organized by Globally Multidisciplinary Research and Education
+Association (GMREA) during 14 Mar, 2020.
+\end{itemize}
+
+
+\resheading{ORGANIZED CONFERENCES \& WORKSHOPS}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{enumerate}
+	
+	\item \textbf{IT Advisory Committee Member} of 24th FAI International Conference on Global Trends of Data Analytics in Business Management, Social Sciences, Medical Sciences and Decision making (24th FAI-ICDBSMD 2021) during 25, 26, 27 June 2021.\\(\url{https://www.faterindia.org/24thfai2021})
+	
+	\item \textbf{IT Advisory Committee Member} of 23rd FAI International Conference 2021 on Emerging Trends \& Adaptation of Spirituality in Management, Artificial Intelligence, Education, Health, Tourism, Science \& Technology (23rd FAI-ICS 2021)  during 19, 20 \& 21 February 2021.\\(\url{https://faterindia2020.wixsite.com/23fai})
+	
+	\item \textbf{IT Advisory Committee Member} of 22nd FAI International Conference on Mathematical, Computational Intelligence and Engineering Approaches to Healthcare, Business and Tourism Analytics 2020 (22nd FAI-ICMCIE 2020)  during 20, 21 \& 22 December, 2020.\\(\url{https://faterindia2020.wixsite.com/22fai-icmcie2020})
+	
+	\item \textbf{IT Advisory Committee Member} of India, Ukraine, Brazil \& Greater Mekong Subregion International Conference - 2020 (IUBGMS 2020) on Global Challenges and Threats to National Economies Nowadays during 20, 21, 22 November 2020.\\ (\url{https://faterindia2020.wixsite.com/iubgms2020})
+\end{enumerate}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{TEACHING EXPERIENCE}
+\begin{itemize}
+\item Programming Languages Lab (Course Code: MA-5151). M.Sc.(1st Semester). MNNIT Allahabad
+
+\item MATHEMATICS II (Course Code: MA-1201). B.Tech.(2nd Semester). MNNIT Allahabad
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{EXTRA-CURRICULAR ACTIVITIES}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{itemize}
+            \item Academic Board Members: \textbf{Learnbay} in accreditation with \textbf{Woolf University}
+            (\url{https://learnbay.woolf.university})
+		\item Teaching on Youtube 
+		\includegraphics[scale=.015]{youtube} ``{\large \textbf{Mathematics behind Data Science}}"
+		(\url{https://www.youtube.com/c/MathematicsbehindDataScience})
+		
+		\item Founder of \textbf{Mathematical ML} (\url{https://mathematicalml.wixsite.com/mathml})
+		
+		\item \textbf{Share Market Investment }
+
+	\item IT Advisory Committee member of \textbf{FATER Academy of India} (\url{https://www.faterindia.org/})
+	
+		
+	\item Website Design, Development and Data maintenance
+	\begin{itemize}
+	\item \textbf{FATER Academy of India} (\url{https://www.faterindia.org/}) 
+	\item \textbf{FAI Publications} (\url{https://www.faipublications.com/})
+		\end{itemize}
+		
+	\item Worked as a volunteer in ``\textbf{Rabin Hood Army}”
+	
+	\item Participated in 
+	
+	\begin{itemize}
+	\item \textbf{ZILLA VIGYAN MANASIKATA-O-MEDHA AVIKSH}A (2006)
+	\item \textbf{TALENT SEARCH TEST ON GEOGRAPHY} (2005)
+	\end{itemize}
+	
+	\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{HOBBIES AND PERSONAL INTEREST}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+\item Drawing Logical Pictures
+\item Listening Audio Books Summary 
+\item Yoga, Gym, Calisthenics, Travel, Photography and Adventurer Sports
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{PERSONAL DETAILS}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+\item \textbf{Father’s Name:}  Mr. Ramkrishna Mandal\\
+\item \textbf{Mother’s Name:}  Mrs. Jharna Mandal\\
+\item \textbf{Date of Birth:} 19/04/1992\\
+\item \textbf{Sex:} Male\\
+\item \textbf{Linguistic Proficiency:} Bengali, Hindi and English\\
+\item \textbf{Permanent Address:} Vill-Patharghata, Post- Dakshin Dauki, Police Station- Contai(Junput Coastal), Dist- Purba Medinipur, West Bengal-721450, India.
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{DECLARATION}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+ \parbox{6.762in}{I hereby declare that all the information filled above is very authentic, genuine to the best of my knowledge. I take full responsibility of the authenticity of the above information.}
+\end{center}
+
+\vspace{1cm}
+%\textbf{Date:} \today 
+\hfill
+\includegraphics[scale=.33]{degital signature.png}\\
+\textbf{Place:} Contai, West Bengal \hfill \\ 
+
+\textbf{Date:} \today
+ 
+
+\end{document}
