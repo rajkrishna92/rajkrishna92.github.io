@@ -575,6 +575,7 @@ section,
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
   z-index: 1;
 }
 
@@ -625,6 +626,18 @@ section,
 }
 
 @media (max-width: 768px) {
+  .hero {
+    min-height: auto;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    padding: 0;
+  }
+
+  .hero .hero-bg-image {
+    object-fit: contain;
+    object-position: center top;
+  }
+
   .hero h2 {
     font-size: 32px;
   }
