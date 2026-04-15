@@ -1606,6 +1606,14 @@ Resume
   font-weight: 500;
 }
 
+/* When year-badge is used as a link (e.g. "View certificate"), keep it in normal flow */
+a.year-badge {
+  position: static;
+  display: inline-block;
+  margin-top: 15px;
+  text-decoration: none;
+}
+
 /* Job Title & Company */
 .experience-card h3 {
   font-size: 24px;
