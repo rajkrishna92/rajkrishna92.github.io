@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Keep legacy backup page out of search results
+Disallow: /index_old.html
+
+Sitemap: https://rajkrishna92.github.io/sitemap.xml
