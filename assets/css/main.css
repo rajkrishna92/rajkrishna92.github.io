@@ -506,6 +506,18 @@ section,
   background-color: var(--background-color);
   padding: 60px 0;
   overflow: clip;
+  /*
+   * Let browsers skip rendering off-screen sections and paint them on demand
+   * as the user scrolls.
+   */
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 900px;
+}
+
+/* Keep the hero section eagerly rendered for fast first meaningful paint. */
+#hero.section {
+  content-visibility: visible;
+  contain-intrinsic-size: auto;
 }
 
 /*--------------------------------------------------------------
