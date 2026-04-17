@@ -57,6 +57,40 @@
   scroll-behavior: smooth;
 }
 
+/* System Dark Mode - Automatically applies dark theme based on OS/browser preference */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #0a0f1a;
+    --default-color: #e0e0e0;
+    --heading-color: #ffffff;
+    --accent-color: #3aafeb;
+    --surface-color: #121a2b;
+    --contrast-color: #ffffff;
+  }
+
+  :root {
+    --nav-color: #a8a9b4;
+    --nav-hover-color: #ffffff;
+    --nav-mobile-background-color: #040b14;
+    --nav-dropdown-background-color: #040b14;
+    --nav-dropdown-color: #a8a9b4;
+    --nav-dropdown-hover-color: #ffffff;
+  }
+
+  .light-background {
+    --background-color: #0e1525;
+    --surface-color: #151f2b;
+  }
+
+  .dark-background {
+    --background-color: #040b14;
+    --default-color: #ffffff;
+    --heading-color: #ffffff;
+    --surface-color: #0c1320;
+    --contrast-color: #ffffff;
+  }
+}
+
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
 --------------------------------------------------------------*/
@@ -531,11 +565,13 @@ section,
 .section-title h2 {
   font-size: 32px;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin: 0 auto 20px auto; /* Centers the block */
   padding-bottom: 20px;
   position: relative;
-  text-align: center; /* Centers the text */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adds a soft shadow to the text */
+  display: block;
+  width: fit-content; /* Shrinks the container width to exactly match the text */
+  text-align: center;
+  text-shadow: 2px 2px 4px color-mix(in srgb, var(--heading-color), transparent 70%);
 }
 
 .section-title h2:after {
@@ -543,11 +579,11 @@ section,
   position: absolute;
   left: 50%;
   bottom: 0;
-  width: 300px; /* Adjust width as needed */
+  width: 100%; /* Now perfectly scales to the fit-content container */
   height: 4px;
-  background: #000; /* Change color as needed */
+  background: var(--accent-color); /* Using accent color to guarantee high visibility on both light and dark themes */
   transform: translateX(-50%);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9); /* Adds a shadow effect below the underline */
+  box-shadow: 0 4px 6px color-mix(in srgb, var(--accent-color), transparent 40%);
   border-radius: 2px;
 }
 
@@ -852,7 +888,7 @@ Resume
   height: 50px;
   line-height: 50px;
   border-radius: 50%;
-  border: 2px solid #eee;
+  border: 2px solid color-mix(in srgb, var(--default-color), transparent 80%);
   color: #FF305B;
   font-size: 25px;
   margin: 0 auto 50px;
@@ -863,7 +899,7 @@ Resume
   content: '';
   width: 2px;
   height: 45px;
-  background: #eee;
+  background: color-mix(in srgb, var(--default-color), transparent 80%);
   position: absolute;
   bottom: -45px;
   left: calc(50% - 1px);
@@ -907,7 +943,7 @@ Resume
   content: '';
   width: 2px;
   height: calc(100% - 30px);
-  background: #eee;
+  background: color-mix(in srgb, var(--default-color), transparent 80%);
   position: absolute;
   top: 22px;
   left: -16px;
@@ -918,7 +954,7 @@ Resume
   height: 15px;
   border-radius: 50%;
   border: 1px solid #FF305B;
-  background: #fff;
+  background: var(--surface-color);
   position: absolute;
   top: 0px;
   left: -22px;
@@ -1492,7 +1528,7 @@ Resume
 
 /* Research Section */
 #publication .section-title h2 {
-  color: #2c4964;
+  color: var(--heading-color);
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 15px;
@@ -1501,14 +1537,14 @@ Resume
 #publication .tabs {
   display: flex;
   margin-bottom: 30px;
-  border-bottom: 2px solid #eee;
+  border-bottom: 2px solid color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
 #publication .tab {
   padding: 12px 25px;
   cursor: pointer;
   font-weight: 600;
-  color: #6b6b6b;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
   transition: all 0.3s ease;
   border-bottom: 2px solid transparent;
   margin-bottom: -2px;
